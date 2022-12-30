@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/leone-venter-VieM9BdZKFo-unsplash.jpg);
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor-main{
+    width: 40%;
+    height: 80vh;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 7px rgba(148, 34, 254, 0.067);
+}
+
+.contenedor-form{
+    width: 100%;
+    height: 30%;
+    padding: 40px;
+    background-color: rgb(148, 34, 254);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tareaInput{
+    width: 100%;
+    height: 50px;
+    margin-bottom:10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    border: 5px solid rgba(148, 34, 254, 0.23);
+    outline: none;
+}
+
+#tareaInput.error{
+    border: 3px solid rgb(255, 2, 2);
+}
+
+#btn-agregar{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(148, 34, 254);
+    border-color: rgb(63, 7, 116);
+    outline: none;
+}
+
+#btn-agregar:hover{
+    cursor: pointer;
+}
+
+.contenedor-tareas{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column
+}
+
+ul li{
+    width: 80%;
+    height: 20%;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    border: 5px solid rgba(148, 34, 254, 0.062);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ul li:hover{
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li a:focus{
+    color: black;
+}
+
